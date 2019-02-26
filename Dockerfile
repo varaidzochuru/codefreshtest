@@ -1,8 +1,5 @@
 FROM ubuntu:18.04
 
-WORKDIR /app
-COPY credentials /app
-
 #install mysql client
 RUN apt-get update \
     && apt-get install -y --no-install-recommends mysql-client \
